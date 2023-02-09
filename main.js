@@ -1,12 +1,12 @@
 function startTime() {
     var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
+    var hur = today.getHours();
+    var min = today.getMinutes();
+    var sec = today.getSeconds();
+    min = checkTime(min);
+    sec = checkTime(sec);
     document.getElementById('txt').innerHTML =
-    h + ":" + m + ":" + s;
+    hur + ":" + min + ":" + sec;
     var t = setTimeout(startTime, 500);
     }
     function checkTime(i) {
